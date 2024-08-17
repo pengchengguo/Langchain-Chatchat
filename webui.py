@@ -16,11 +16,9 @@ if __name__ == "__main__":
 
     st.set_page_config(
         "Langchain-Chatchat WebUI",
-        os.path.join("img", "chatchat_icon_blue_square_v2.png"),
+        os.path.join("img", "logo.jpg"),
         initial_sidebar_state="expanded",
         menu_items={
-            'Get Help': 'https://github.com/chatchat-space/Langchain-Chatchat',
-            'Report a bug': "https://github.com/chatchat-space/Langchain-Chatchat/issues",
             'About': f"""欢迎使用 Langchain-Chatchat WebUI {VERSION}！"""
         }
     )
@@ -40,7 +38,7 @@ if __name__ == "__main__":
         st.image(
             os.path.join(
                 "img",
-                "logo-long-chatchat-trans-v2.png"
+                "logo.jpg"
             ),
             use_column_width=True
         )
