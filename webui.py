@@ -15,12 +15,10 @@ if __name__ == "__main__":
     is_lite = "lite" in sys.argv
 
     st.set_page_config(
-        "Langchain-Chatchat WebUI",
-        os.path.join("img", "logo.jpg"),
+        "Test WebUI",
+        os.path.join("img", "logo2.jpg"),
         initial_sidebar_state="expanded",
-        menu_items={
-            'About': f"""欢迎使用 Langchain-Chatchat WebUI {VERSION}！"""
-        }
+        menu_items={"About": f"""欢迎测试 {VERSION}！"""},
     )
 
     pages = {
@@ -35,13 +33,7 @@ if __name__ == "__main__":
     }
 
     with st.sidebar:
-        st.image(
-            os.path.join(
-                "img",
-                "logo.jpg"
-            ),
-            use_column_width=True
-        )
+        st.image(os.path.join("img", "logo2.jpg"), use_column_width=True)
         st.caption(
             f"""<p align="right">当前版本：{VERSION}</p>""",
             unsafe_allow_html=True,
